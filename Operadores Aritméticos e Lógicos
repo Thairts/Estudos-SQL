@@ -1,4 +1,4 @@
---Analisando o poder de compra dos clientes com operadores aritméticos e lógicos em SQL
+-- Analisando o poder de compra dos clientes com operadores aritméticos e lógicos em SQL
 -- Objetivo:
 -- Realizar uma análise do poder de compra dos clientes utilizando operadores aritméticos e lógicos para calcular quantos salários mínimos cada cliente recebe. Além disso, identificar quais clientes ganham acima de 4 salários mínimos e filtrar aqueles que ganham entre 4 e 5 salários mínimos.
 
