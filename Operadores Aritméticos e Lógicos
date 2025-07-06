@@ -1,0 +1,15 @@
+Analisando o poder de compra dos clientes com operadores aritméticos e lógicos:
+Objetivo:
+Com base nos dados da tabela sales.customers, calcular quantos salários mínimos cada cliente recebe, identifique se eles ganham acima de 4 salários e filtre apenas os clientes que ganham entre 4 e 5 salários mínimos.
+
+Regras: 
+Considere o salário mínimo como R$1200.
+Colunas interessantes para email, income, salários mínimos, acima de 4 salários.
+
+SELECT
+  email,
+  income,
+  income / 1200 AS "salários mínimos",
+  (income / 1200) > 4 AS "acima de 4 salários"
+FROM sales.customers
+WHERE (income / 1200) BETWEEN 4 AND 5;
