@@ -15,7 +15,7 @@ LIMIT 10;
 
 SELECT *
 FROM sales.customers
-WHERE birth_date >= '2000-01-01'
+WHERE birth_date >= '2000-02-10'
 ORDER BY score DESC
 LIMIT 10;
 
