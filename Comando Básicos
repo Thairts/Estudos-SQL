@@ -1,26 +1,27 @@
--- Comandos: Select, from, where, order by, limit e not null
--- (1): Comando para selecionar os nomes de cidades distintas que existem no estado de Minas Gerais em order alfabética 
+Explorando dados de clientes e vendas com comandos básicos em SQL:
+SELECT, FROM, WHERE, ORDER BY, LIMIT, DISTINCT e filtros com NOT NULL.
 
-select distinct city
-from sales.customers
-where state = 'MG'
-order by city
+Consultas:
+Selecionar o nome das cidades únicas no estado de Minas Gerais, organizadas em ordem alfabética.
+Obter os 10 registros de compras mais recentes (pagas), ordenadas pela data da compra.
+Listar os 10 clientes com maior score que nasceram a partir de 01/01/2000.
 
--- (2): Comando para selecionar o visit_id das 10 compras mais recentes efetuadas
+SELECT DISTINCT city
+FROM sales.customers
+WHERE state = 'MG'
+ORDER BY city;
 
-select visit_id 
-from sales.funnel 
-where paid_date is not null
-order by paid_date desc
-limit 10
+SELECT visit_id
+FROM sales.funnel
+WHERE paid_date IS NOT NULL
+ORDER BY paid_date DESC
+LIMIT 10;
 
--- (3) Comando para selecionar todos os dados dos 10 clientes com maior score nascidos após 01/01/2000
-
-select *
-from sales.customers
-where birth_date >= '2000-01-01'
-order by score desc
-limit 10
+SELECT *
+FROM sales.customers
+WHERE birth_date >= '2000-01-01'
+ORDER BY score DESC
+LIMIT 10;
 
 
 
