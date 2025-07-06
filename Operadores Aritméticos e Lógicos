@@ -4,7 +4,7 @@ Com base nos dados da tabela sales.customers, calcular quantos salários mínimo
 
 Regras: 
 Considere o salário mínimo como R$1200.
-Colunas interessantes para email, income, salários mínimos, acima de 4 salários.
+Colunas interessantes para mostrar na consulta: email, income, salários mínimos, acima de 4 salários.
 
 SELECT
   email,
