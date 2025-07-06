@@ -1,10 +1,6 @@
--- Explorando dados de clientes e vendas com comandos básicos em SQL:
--- SELECT, FROM, WHERE, ORDER BY, LIMIT, DISTINCT e filtros com NOT NULL.
-
--- Consultas:
--- Selecionar o nome das cidades únicas no estado de Minas Gerais, organizadas em ordem alfabética.
--- Obter os 10 registros de compras mais recentes (pagas), ordenadas pela data da compra.
--- Listar os 10 clientes com maior score que nasceram a partir de 01/01/2000.
+-- Explorando dados de clientes e vendas com comandos básicos em SQL
+-- Objetivo:
+-- Executar consultas utilizando comandos básicos do SQL — como SELECT, FROM, WHERE, ORDER BY, LIMIT, DISTINCT e filtros com NOT NULL — para explorar informações relevantes sobre cidades, compras e clientes.
 
 SELECT DISTINCT city
 FROM sales.customers
