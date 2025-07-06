@@ -4,4 +4,16 @@ SELECT
   income / 1200 AS "salários mínimos",
   (income / 1200) > 4 as "acima de 4 salários"
 FROM sales.customers
-WHERE (income / 1200) BETWEEN 4 AND 5;
+WHERE (income / 1200) BETWEEN 4 AND 5; 
+
+SELECT email, city, state
+FROM sales.customers
+WHERE state in ('MT', 'MG')
+
+SELECT email, city, state
+FROM sales.customers
+WHERE state not in ('SP')
+
+SELECT city
+FROM temp_tables.regions
+WHERE city ilike 'z%'
