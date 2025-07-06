@@ -1,0 +1,22 @@
+SELECT count(*)
+FROM sales.customers
+WHERE ((current_date - birth_date) / 365 ) < 30
+
+SELECT 
+	max((current_date - birth_date) / 365 ),
+	min((current_date - birth_date) / 365 )
+FROM sales.customers
+
+SELECT *
+FROM sales.customers
+WHERE income = (select max(income) from sales.customers)
+
+SELECT brand, count(*)
+FROM sales.products
+GROUP BY brand
+ORDER BY brand 
+
+SELECT brand, model_year, count(*)
+FROM sales.products
+GROUP BY brand, model_year
+ORDER BY brand , model_year
