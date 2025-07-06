@@ -1,0 +1,16 @@
+SELECT 
+	pro.brand,
+	count(*) as visitas
+FROM sales.funnel as fun
+left join sales.products as pro
+	on fun.product_id = pro.product_id
+GROUP BY pro.brand
+ORDER BY visitas desc
+
+SELECT 
+	sto.store_name,
+	count(*) as visitas
+FROM sales.funnel as fun
+left join sales.stores as sto
+	on fun.store_id = sto.store_id
+ORDER BY visitas desc
