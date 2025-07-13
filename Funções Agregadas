@@ -1,3 +1,13 @@
+-- Objetivo:
+-- Aplicar funções agregadas para extrair informações relevantes dos dados de clientes e veículos. As consultas utilizam COUNT, MAX, MIN e agregações com GROUP BY e HAVING para:
+
+-- Contar quantos clientes têm menos de 30 anos.
+-- Identificar a idade do cliente mais velho e do mais novo.
+-- Selecionar todas as informações do(s) cliente(s) com maior renda.
+-- Contar a quantidade de veículos registrados por marca.
+-- Contar veículos por marca e ano do modelo.
+-- Filtrar marcas que possuem mais de 10 veículos registrados.
+
 SELECT count(*)
 FROM sales.customers
 WHERE ((current_date - birth_date) / 365 ) < 30
