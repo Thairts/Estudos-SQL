@@ -1,2 +1,2 @@
 # Estudos-SQL
-Projeto para estudos no SQL focado em análise de dados
+💎 Primeiros Passos em SQL: Aplicando desde conceitos básicos a consultas mais avançadas.
