@@ -1,3 +1,7 @@
+-- Explorando dados de clientes e vendas com comandos básicos em SQL 
+-- Objetivo: 
+-- Executar consultas utilizando comandos básicos do SQL — como SELECT, FROM, WHERE, ORDER BY, LIMIT, DISTINCT e filtros com NOT NULL para explorar informações relevantes sobre cidades, compras e clientes.
+
 SELECT DISTINCT city
 FROM sales.customers
 WHERE state = 'MG'
